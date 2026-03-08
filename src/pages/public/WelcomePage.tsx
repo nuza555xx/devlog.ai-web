@@ -235,7 +235,7 @@ export function WelcomePage() {
       </section>
 
       {/* Features Grid Section */}
-      <section id="features" className="py-20 bg-white border-t border-gray-100">
+      <section id="features" className="py-20 :bg-[#121217]/95">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
@@ -249,7 +249,7 @@ export function WelcomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="group p-8 rounded-3xl bg-brand-light hover:bg-brand-pink/30 transition-colors duration-300 border border-transparent hover:border-brand-pink/50">
+            <div className="group p-8 rounded-3xl">
               <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-2xl shadow-sm mb-6 text-brand-black group-hover:scale-110 group-hover:rotate-[5deg] transition-transform duration-300">
                 <FontAwesomeIcon icon={["fas", "bolt"]} />
               </div>
@@ -264,7 +264,7 @@ export function WelcomePage() {
             </div>
 
             {/* Feature 2 */}
-            <div className="group p-8 rounded-3xl bg-brand-light hover:bg-brand-green/30 transition-colors duration-300 border border-transparent hover:border-brand-green/50">
+            <div className="group p-8 rounded-3xl">
               <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-2xl shadow-sm mb-6 text-brand-black group-hover:scale-110 group-hover:rotate-[5deg] transition-transform duration-300">
                 <FontAwesomeIcon icon={["fas", "brain"]} />
               </div>
@@ -278,7 +278,7 @@ export function WelcomePage() {
             </div>
 
             {/* Feature 3 */}
-            <div className="group p-8 rounded-3xl bg-brand-light hover:bg-brand-beige/50 transition-colors duration-300 border border-transparent hover:border-brand-beige">
+            <div className="group p-8 rounded-3xl">
               <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-2xl shadow-sm mb-6 text-brand-black group-hover:scale-110 group-hover:rotate-[5deg] transition-transform duration-300">
                 <FontAwesomeIcon icon={["fas", "magnifying-glass"]} />
               </div>
@@ -296,28 +296,28 @@ export function WelcomePage() {
       </section>
 
       {/* Social Proof Section */}
-      <section className="py-16 border-t border-gray-100 bg-gray-50">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-8">
+          <p className="text-sm font-semibold uppercase tracking-widest mb-8">
             Trusted by developers at
           </p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-80">
-            <div className="flex items-center gap-2 text-xl font-bold text-gray-700">
+            <div className="flex items-center gap-2 text-xl font-bold">
               <FontAwesomeIcon icon={["fab", "aws"]} className="text-3xl" /> AWS
             </div>
-            <div className="flex items-center gap-2 text-xl font-bold text-gray-700">
+            <div className="flex items-center gap-2 text-xl font-bold">
               <FontAwesomeIcon icon={["fab", "google"]} className="text-3xl" />{" "}
               Google
             </div>
-            <div className="flex items-center gap-2 text-xl font-bold text-gray-700">
+            <div className="flex items-center gap-2 text-xl font-bold">
               <FontAwesomeIcon icon={["fab", "meta"]} className="text-3xl" />{" "}
               Meta
             </div>
-            <div className="flex items-center gap-2 text-xl font-bold text-gray-700">
+            <div className="flex items-center gap-2 text-xl font-bold">
               <FontAwesomeIcon icon={["fab", "stripe"]} className="text-3xl" />{" "}
               Stripe
             </div>
-            <div className="flex items-center gap-2 text-xl font-bold text-gray-700">
+            <div className="flex items-center gap-2 text-xl font-bold">
               <FontAwesomeIcon
                 icon={["fab", "spotify"]}
                 className="text-3xl"
@@ -329,7 +329,7 @@ export function WelcomePage() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-24 bg-white">
+      <section id="how-it-works" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left: Terminal Illustration */}
@@ -472,7 +472,7 @@ export function WelcomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-100 pt-16 pb-8">
+      <footer className="pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
             <div className="col-span-2 lg:col-span-2">
@@ -484,7 +484,7 @@ export function WelcomePage() {
                   />
                 </div>
                 <span className="font-heading font-bold text-lg">
-                  DevLog.ai
+                  devlog.ai
                 </span>
               </div>
               <p className="text-gray-500 text-sm mb-6 max-w-xs">

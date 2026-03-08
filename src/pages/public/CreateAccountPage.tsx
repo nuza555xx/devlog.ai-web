@@ -9,7 +9,6 @@ import { useAuthStore } from "../../stores/authStore";
 export function CreateAccountPage() {
   const navigate = useNavigate();
   const registerUser = useAuthStore((s) => s.register);
-  const login = useAuthStore((s) => s.login);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
@@ -24,7 +23,6 @@ export function CreateAccountPage() {
     setSubmitError(null);
     try {
       await registerUser(data.email, data.password);
-      await login(data.email, data.password);
       navigate("/dashboard");
     } catch (err) {
       setSubmitError(

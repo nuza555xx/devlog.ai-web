@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* ─── Dark mode: class-based ─── */
+@variant dark (&:where(.dark, .dark *));
+
 /* ─── Custom Theme ─── */
 @theme {
   /* Brand Colors */
